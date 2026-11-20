@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: "Abril Fatface", Georgia, serif;
+    --font-heading: "Proxima Nova", "Montserrat", "Segoe UI", sans-serif;
+    --font-sans: "Segoe UI", "Proxima Nova", "Montserrat", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1, .font-display {
+    font-family: var(--font-display);
+  }
+
+  h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+.sidebar-gradient {
+  background: linear-gradient(155deg, #F0E5DF 0%, #E5D6CE 100%);
+}
+
+.dark .sidebar-gradient {
+  background: linear-gradient(155deg, #2A2523 0%, #231F1E 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

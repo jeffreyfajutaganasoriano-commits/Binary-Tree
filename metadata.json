@@ -1,0 +1,6 @@
+{
+  "name": "BinaryTree Studio",
+  "description": "Interactive Data Structures and Algorithms educational studio dedicated to Binary Expression Trees, recursive tree construction, and INORDER (Infix), PREORDER (Prefix), and POSTORDER (Postfix) traversals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
