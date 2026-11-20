@@ -37,3 +37,12 @@ npm run build
    - **Build Command:** `npm run build`
    - **Output Directory:** `dist`
 4. Click **Deploy**.
+
+## Deploying to GitHub Pages
+
+The GitHub Actions workflow in `.github/workflows/deploy.yml` builds the app with the `/Binary-Tree/` base path and deploys it to GitHub Pages whenever a commit is pushed to `main`.
+
+1. In the GitHub repository, open **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Push a commit to `main` or run the **Deploy to GitHub Pages** workflow from the **Actions** tab.
+4. When the workflow succeeds, open `https://jeffreyfajutaganasoriano-commits.github.io/Binary-Tree/`.
